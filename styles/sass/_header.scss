@@ -3,35 +3,35 @@
         background-color: $purple-background;
         animation: 3.5s ease-in-out 0s 1 fadeIn;
     }
-// @keyframes fadeIn {
-//     0% {
-//         background-color: black;
-//     }
-//     100% {
-//         background-color: $purple-background;
-//     }
-// }   
-// @keyframes slideInFromRight {
-//   0% {
-//     background-position-x: 1800px;
-//         opacity: 0;
-//   }
-//   100% {
-//     background-position-x: -120px;
-//         opacity: 1;
-//   }
-// }
+@keyframes fadeIn {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: $purple-background;
+    }
+}   
+@keyframes slideInFromRight {
+  0% {
+    background-position-x: 1800px;
+        opacity: 0;
+  }
+  100% {
+    background-position-x: -120px;
+        opacity: 1;
+  }
+}
 
-// @keyframes slideInFromLeft {
-//   0% {
-//     transform: translateX(-130%);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
-// }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-130%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 header {
     h1 {
