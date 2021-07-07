@@ -1,7 +1,7 @@
 <?php
     $name = $_POST['full name'];
-    $visitor_email = $_POST['email']
-    $message = $_POST['inquiry']
+    $visitor_email = $_POST['email'];
+    $message = $_POST['inquiry'];
 
     $email_from = 'sshussaini96@gmail.com';
     $email_subject = "New Form Submission";
