@@ -1,0 +1,64 @@
+.skills-page {
+    width: 1920px;
+    height: 1080px;
+    background-image: none;
+    h1 {
+        @include h1;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 300px;
+        right: 10%;
+    }
+    background-color: black;
+}
+
+.skills {
+        background-color: black;
+
+}
+
+@keyframes opacitySkills {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 900px;
+    background-color: black;
+    list-style: none;
+    margin: 0 auto;
+    font-size: 65px;
+    color: white;
+    height: 250px;
+    animation: 3s ease-in-out 0s 1 opacitySkills;
+    li {
+        margin: 15px 30px;
+        text-align: center;
+
+            background-color: black;
+        i {
+                background-color: black;
+                // justify-content: center;
+                // align-items: center;
+                // margin: 0 auto;
+        }
+            span {
+            font-size: 15px;
+            width: 80px;
+            margin: 0 auto;
+            display: flex;
+            background-color: black;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

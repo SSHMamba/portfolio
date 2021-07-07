@@ -1,0 +1,25 @@
+@mixin h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 85px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.842);
+    background-color: transparent;
+    width: 900px;
+}
+
+@mixin h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(216, 142, 203);
+    background-color: transparent;
+}
+
+@mixin h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+}

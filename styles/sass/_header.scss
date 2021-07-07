@@ -1,0 +1,101 @@
+
+* {
+        background-color: $purple-background;
+        animation: 3.5s ease-in-out 0s 1 fadeIn;
+    }
+// @keyframes fadeIn {
+//     0% {
+//         background-color: black;
+//     }
+//     100% {
+//         background-color: $purple-background;
+//     }
+// }   
+// @keyframes slideInFromRight {
+//   0% {
+//     background-position-x: 1800px;
+//         opacity: 0;
+//   }
+//   100% {
+//     background-position-x: -120px;
+//         opacity: 1;
+//   }
+// }
+
+// @keyframes slideInFromLeft {
+//   0% {
+//     transform: translateX(-130%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+header {
+    h1 {
+        @include h1;
+                animation: 3s ease-in-out 0s 1 slideInFromLeft;
+
+    }
+
+    h2 {
+        @include h2;
+                        animation: 3s ease-in-out 0s 1 slideInFromLeft;
+        margin-bottom: 50px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    h3 {
+        @include h3;
+                        animation: 3s ease-in-out 0s 1 slideInFromLeft;
+        width: 400px;
+    }
+
+    .get-started {
+        color: white;
+        animation: 3s ease-in-out 0s 1 slideInFromLeft;
+        background-color: transparent;
+        padding-top: 10px;
+        font-size: 25px;
+    }
+}
+
+
+header {
+        background: url(/assets/header-image-alt.png);
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-attachment:initial;
+        background-position-x: -120px;
+        background-position-y: -20px;
+        animation: 4s ease-in-out 0s 1 slideInFromRight;
+}
+
+.social-icons {
+
+    background-color: transparent;
+    background: none;
+    position: relative;
+    right: 7%;
+    width: 58px;
+    bottom: 400px;
+    animation: 5s ease-in-out 0s 1 slideInFromLeft;
+
+    li {
+
+    list-style: none;
+
+    background-color: transparent;
+        background: none;
+
+    i {
+        color: white;
+        margin: 35px 0;
+        background-color: transparent;
+            background: none;
+    }
+}
+}
