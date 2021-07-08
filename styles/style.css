@@ -627,7 +627,7 @@ header {
   font-size: 35px;
   background-color: transparent;
   margin: 0 auto;
-  font-weight: normal;
+  font-weight: bold;
   top: 30px;
 }
 .project-1 h3, .project-2 h3, .project-3 h3 {
