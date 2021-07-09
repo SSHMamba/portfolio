@@ -242,13 +242,22 @@
     }
 </script>
 <script>
-        if (screen.width > 100) {
+        if (screen.width > 700) {
                 const head = document.getElementsByTagName('head')[0];
                 const script = document.createElement('script');
                 script.type = 'text/javascript';
                 script.src = 'scriptsmall.js';
                 head.appendChild(script);
             }
+</script>
+<script>
+    if (screen.width > 100) {
+        const head = document.getElementsByTagName('head')[0];
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'script13inch.js';
+        head.appendChild(script);
+    }
 </script>
 
 </body>
