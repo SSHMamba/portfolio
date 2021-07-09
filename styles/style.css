@@ -912,6 +912,12 @@ textarea[type=text] {
   color: white;
 }
 
+.recaptcha {
+  position: relative;
+  padding-top: 20px;
+  right: 50px;
+}
+
 .footer-wrapper {
   width: 1920px;
   height: 540px;

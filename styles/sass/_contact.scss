@@ -78,9 +78,6 @@ textarea[type=text] {
 
 }
 
-textarea[type=text]::placeholder {
-    
-}
 
 .send-button {
     outline: none;
@@ -135,4 +132,10 @@ textarea[type=text]::placeholder {
     right: 100px;
     background-color: transparent;
     color: white;
+}
+
+.recaptcha {
+    position: relative;
+    padding-top: 20px;
+    right: 50px;
 }
