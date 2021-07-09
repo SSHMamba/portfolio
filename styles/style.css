@@ -493,13 +493,6 @@ header {
   padding-top: 300px;
   right: 10%;
 }
-.skills-page .skills-background {
-  position: relative;
-  bottom: 700px;
-  left: 1450px;
-  width: 1000px;
-  height: 1200px;
-}
 .skills-page .scroll-headers {
   opacity: 0;
   -webkit-transition: opacity 2s linear;
@@ -1289,6 +1282,10 @@ template {
     position: relative;
     left: 600px;
   }
+  header i {
+    position: relative;
+    left: 1000px;
+  }
 
   .about-page {
     max-width: 3840px;
@@ -1305,12 +1302,7 @@ template {
     max-width: 3840px;
     width: 100%;
     height: 2160px;
-  }
-  .skills-page .skills-background {
-    left: 2600px;
-    width: 1500px;
-    height: 2160px;
-    bottom: 900px;
+    background-position-x: 3000px;
   }
 
   .skills-list {
@@ -1341,6 +1333,7 @@ template {
     max-width: 3840px;
     width: 100%;
     height: 2160px;
+    background-size: 28%;
   }
 
   .footer-wrapper {
