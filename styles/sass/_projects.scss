@@ -156,3 +156,24 @@
     .project-4 {
         background-color: #790868;
     }
+
+.live-repo-links {
+    background-color: transparent;
+    ul {
+        display: flex;
+        background-color: transparent;
+        justify-content: center;
+        justify-content: space-evenly;
+        width: 250px;
+        margin: 100px auto;
+    }
+    li {
+        list-style-type: none;
+        color: white;
+        background-color: transparent;
+        a {
+            background-color: transparent;
+            color: white;
+        }
+    }
+}
