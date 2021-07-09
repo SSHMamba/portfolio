@@ -1,0 +1,62 @@
+.about-page {
+    width: 1920px;
+    height: 1080px;
+    background-image: none;
+    .about-box {
+        background-color: transparent;
+        padding-top: 150px;
+        width: 1200px;
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+        position: relative;
+        left: 300px;
+        display: flex;
+
+    }
+
+    h1 {
+        @include h1;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 150px;
+        right: 10%;
+
+    }
+
+
+
+    h2 {
+        background-color: transparent;
+        color: white;
+    }
+
+    p {
+        color: white;
+        background-color: transparent;
+        line-height: 40px;
+    }
+
+    .about-pic {
+        width: 400px;
+        box-shadow: $purple-background 20px 20px;
+        margin-left: 150px;
+
+    }
+    background-color: black;
+
+}
+
+.about-box.active {
+    opacity: 1;
+    transition: 0.5 ease-in;
+
+}
+.scroll-headers {
+        font-size: 200px;
+                transform: translateX(130%);
+        transition: transform 1.5s ease-in-out;
+    }
+
+.scroll-headers.active {
+            transform: translateX(0);
+}

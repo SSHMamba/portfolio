@@ -22,7 +22,7 @@
         <h1>Hi, my name is Saif Hussaini. I build things for the web. </h1>
         <h2>I am a Front-End Developer, specializing in UI/UX design</h2>
         <h3>I am a Toronto based developer and designer with a strong passion for accessible and clean design </h3>
-        <p class="get-started">Get Started ></p>
+        <!-- <p class="get-started">Get Started ></p> -->
                 <ul class="social-icons">
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-github"></i></li>
@@ -32,14 +32,21 @@
     </header>
 
     <main>
+        <section class="about-page">
+            <h1 class=="scroll-headers">About Me</h1>
+                            <div class="about-box scroll-animation">
+                <p>As a recent graduate with a certificate in Web Development at Juno College, the skills and experience I have picked up are just as important as the passion and enjoyment I have gotten out of front-end web development. As someone with a history and interest in music production and graphic design, being able to showcase my artistic spirit through front-end software with responsive and accessible apps has been very rewarding. Since I've grown to love coding, I have future endeavors to learn back-end and transition to a full-stack developer.</p>
+                                            <img src="./assets/about-pic.jpg" alt="" class="about-pic scroll-headers">
+            </div>
+        </section>
 
 
 
         <section class="skills-page">
             <!-- Skills Page -->
-        <h1>Skills</h1>
+        <h1 class=="scroll">Skills</h1>
         <div class="skills">
-            <ul class="skills-list" id="skills-list">
+            <ul class="skills-list scroll-animation" id="skills-list">
                 <li><i class="fab fa-html5"></i><span>HTML5</span></li>
                 <li><i class="fab fa-sass"></i><span>Sass / CSS3</span></li>
                 <li><i class="fab fa-js-square"></i><span>JavaScript</span></li>
@@ -54,13 +61,14 @@
                 <li><i class="fas fa-universal-access"></i><span>Accessibility</span></li>
             </ul>
         </div>
+        <!-- <img src="./assets/skills-background.png" alt="" class="skills-background scroll-headers"> -->
         </section>
 
 
 
         <section class="projects-page">
             <section class="carousel">
-                <h1>Projects</h1>
+                <h1 class=="scroll">Projects</h1>
                         <button class="button-previous" id="previous"><</button>
                                 <div class="carousel-images">
                                     <div class="project-1">
@@ -101,6 +109,16 @@
                                             <li><i class="fas fa-people-carry"></i><span>Pair Programming</span></li>
                                         </ul>
                                     </div>
+                                    <div class="project-4">
+                                        <h2>Marvel Cinematic Universe Quiz</h2>
+                                        <h3>A multiple choice quiz including score, created using jQuery library with JavaScript</h3>
+                                        <a href="https://priceless-yonath-6f303b.netlify.app/"><img src="./assets/project-4-background.png" alt=""></a>
+                                        <ul class="skills-used">
+                                            <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+                                            <li><i class="fab fa-js-square"></i><span>JavaScript</span></li>
+                                            <li><i class="fab fa-node-js"></i><span>jQuery</span></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <button class="button-next" id="next">></button>
                     
@@ -108,20 +126,24 @@
         </section>
 
         <section class="contact-page">
-            <h1>Get in touch</h1>
-            <div class="contact-form">
-                <form action="contact-handler.php" method="POST">
+            
+            <h1 class=="scroll">Get in touch</h1>
+            <div class="contact-form scroll-animation">
+                <form action="POST" data-netlify="true">
                     <label className="sr-only" htmlFor="Full Name"></label>
-                    <input name="name" type="text" placeholder="full name" autocomplete="off" required>
+                    <input name="name" id="name" type="text" placeholder="full name" autocomplete="off" required>
 
                     <label className="sr-only" htmlFor="Email"></label>
-                    <input name= "email" type="text" placeholder="email" autocomplete="off" required>
+                    <input name= "email" id="email" type="text" placeholder="email" autocomplete="off" required>
 
                     <label className="sr-only" htmlFor="Inquiry"></label>
-                    <textarea name="inquiry" type="text" placeholder="what would you like to discuss?" autocomplete="off"></textarea>
-                    <input type="submit" value="send message" class="send-button">
+                    <textarea id="message" type="text" rows="7" placeholder="what would you like to discuss?" autocomplete="off"></textarea>
+
+                    <input type="file" name="myFile" placeholder="Upload File"></input>
+
+                    <div data-netlify-recaptcha="true"></div>
+                    <input type="submit" name="submit" id="submit" value="send message >" class="send-button">
                 </form>
-                                
             </div>
             <div class="contact-icons-wrapper"></div>
             <ul class="contact-icons">
@@ -129,20 +151,54 @@
                 <li><i class="fab fa-github"></i></li>
                 <li><i class="fab fa-linkedin-in"></i></li>
             </ul>
+            <!-- <img src="./assets/contact-pic.png" alt="" class="contact-pic"> -->
+
                 
 
            
 
         </section>
-        <section>
-            <!-- Contact Page -->
-        </section>
+
     </main>
 
     <footer>
-            <!-- Footer page -->
+        <div class="footer-wrapper">
+            <div class="links-list">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="https://sshmamba.github.io/saif-hussaini-projectone/"><p>Sanctuary Helpers</p></a></li>
+                    <li><a href="https://cohort-34-pirates.github.io/project2-saif-eric/"><p>One Piece Chapter Selector</p></a></li>
+                    <li><a href="https://elegant-tereshkova-91ebbb.netlify.app/"><p>watch it</p></a></li>
+                    <li><a href="https://concert-accountant.netlify.app/"><p>Concert Accountant</p></a></li>
+                    <li><a href="https://priceless-yonath-6f303b.netlify.app/"><p>Marvel Cinematic Universe Quiz</p></a></li>
+                </ul>
+            </div>
+            <div class="content-list">
+                <h2>Site Content</h2>
+                <ul>
+                    <li><p>Home</p></li>
+                    <li><p>About</p></li>
+                    <li><p>Skills</p></li>
+                    <li><p>Projects</p></li>
+                    <li><p>Contact</p></li>
+                </ul>
+            </div>
+            <div class="contact-me">
+                <h2>Contact</h2>
+                <ul>
+                    <li><p>sshussaini96@gmail.com</p></li>
+                    <li><p>Kitchener, Ontario</p></li>
+                    <li><a href="https://github.com/SSHMamba"><p>GitHub</p></a></li>
+                    <li><a href="https://www.linkedin.com/in/saif-hussaini-04a96b202/"><p>LinkedIn</p></a></li>
+                    <li><a href="https://www.twitter.com/saifthemamba"><p>Twitter</p></a></li>
+                </ul>
+            </div>
+            </div>
     </footer>
-    
+
+
+
+<script src="/animations.js"></script>
 <script>
     if (screen.width > 1981) {
         const head = document.getElementsByTagName('head')[0];

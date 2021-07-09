@@ -2,7 +2,7 @@
     width: 1920px;
     height: 1080px;
     background-image: none;
-    background-color: $purple-background;
+    background-color: #290d77;
     h1 {
         @include h1;
         position: relative;
@@ -10,7 +10,24 @@
         right: 10%;
         padding-top: 70px;
     }
+    background-image: url(/assets/contact-pic.png);
+    background-repeat: no-repeat;
+    background-position-x: -300px;
+    background-position-y: -500px;
+}
 
+.contact-wrapper {
+    width: 1920px;
+    width: 1080px;
+}
+
+.contact-pic {
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    right: 860px;
+    bottom: 705px;
+    background-color: transparent;
 }
 
 form {
@@ -18,7 +35,19 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
 
+}
+
+.contact-form {
+    opacity: 0;
+    transition: opacity 2s linear;
+    background-color: transparent;
+}
+
+.contact-form.active {
+    opacity: 1;
+    transition: 0.5 ease-in;
 }
 
 input[type=text] {
@@ -50,28 +79,15 @@ textarea[type=text] {
 
 .send-button {
     outline: none;
-    border: 7px solid $purple-background;
+    border: none;
+    cursor: pointer;
     border-radius: 25px;
-    background-color: white;
+    color: rgba(255, 255, 255, 0.65);
     text-decoration-style: none;
     position: relative;
     left: 250px;
     top: 45px;
-    a {
-        outline: none;
-        border: none;
-        font-size: 35px;
-        padding: 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        font-family: 'Roboto', serif;
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover{
-        color:rgb(216, 142, 203);
-    }
+    background-color: transparent;
 }
 
 .contact-form {

@@ -1,7 +1,12 @@
 .skills-page {
     width: 1920px;
     height: 1080px;
-    background-image: none;
+    background-color: black;
+    background-image: url(/assets/skills-background.png);
+    background-repeat: no-repeat;
+    background-position-x: 1450px;
+    background-position-y: 0px;
+    background-size: contain;
     h1 {
         @include h1;
         position: relative;
@@ -9,43 +14,51 @@
         padding-top: 300px;
         right: 10%;
     }
-    background-color: black;
+
+    .skills-background {
+        position: relative;
+        bottom: 700px;
+        left: 1450px;
+        width: 1000px;
+        height: 1200px;
+
+    }
+
+    .scroll-headers {
+                opacity: 0;
+        transition: opacity 2s linear;
+    }
+    .scroll-headers.active {
+        opacity: 1;
+            transition: 0.5 ease-in;
+    }
 }
 
 .skills {
-        background-color: black;
+        background-color: transparent;
 
 }
-
-@keyframes opacitySkills {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 
 .skills-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 900px;
-    background-color: black;
+    background-color: transparent;
     list-style: none;
     margin: 0 auto;
     font-size: 65px;
     color: white;
+    opacity: 0;
+    transition: opacity 2s linear;
     height: 250px;
-    animation: 3s ease-in-out 0s 1 opacitySkills;
     li {
         margin: 15px 30px;
         text-align: center;
 
-            background-color: black;
+            background-color: transparent;;
         i {
-                background-color: black;
+                background-color: transparent;
                 // justify-content: center;
                 // align-items: center;
                 // margin: 0 auto;
@@ -55,10 +68,16 @@
             width: 80px;
             margin: 0 auto;
             display: flex;
-            background-color: black;
+            background-color: transparent;
             text-align: center;
             justify-content: center;
             align-items: center;
         }
     }
+}
+
+.skills-list.active {
+        opacity: 1;
+    transition: 0.5 ease-in;
+
 }

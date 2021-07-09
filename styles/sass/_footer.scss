@@ -1,0 +1,93 @@
+.footer-wrapper {
+    width: 1920px;
+    height: 540px;
+    background-color: rgba(245, 236, 253, 0.452);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 150px;
+
+}
+    h2 {
+        @include h2;
+        font-size: 25px;
+        color: $purple-background;
+        background-color: transparent;
+    }
+
+    .links-list {
+        background-color: transparent;
+
+            ul {
+                background-color: transparent;
+
+                    li {
+                        list-style-type: none;
+                        width: 300px;
+                        background-color:transparent;
+                                a {
+                                        background-color: transparent;
+                                        color: black;
+
+                                        p  {
+                                            background-color: transparent;
+                                        }                      
+                                }
+                        }
+                }
+    }
+
+    .content-list {
+
+        background-color: transparent;
+
+            ul {
+                background-color: transparent;
+
+                    li {
+                        background-color: transparent;
+                        color: black;
+                        list-style-type: none;
+
+                            p {
+                                background-color: transparent;
+                            }
+                    }
+            }
+    }
+
+    .contact-me {
+        background-color: transparent;
+        
+            ul {
+                background-color: transparent;
+
+                    li {
+                        background-color: transparent;
+                        color: black;
+                        list-style-type: none;
+
+                            p  {
+                                background-color: transparent;
+                             }
+                     }
+            }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

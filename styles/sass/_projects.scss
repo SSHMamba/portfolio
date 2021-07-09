@@ -48,6 +48,8 @@
                 background-color: transparent;
         }
     }
+
+
 }
 
 .carousel-images {
@@ -96,7 +98,7 @@
     position: absolute;
 }
 
-.project-1, .project-2, .project-3 {
+.project-1, .project-2, .project-3, .project-4 {
     width: 1920px;
     height: 1080px;
     display: flex;
@@ -149,4 +151,8 @@
 
     .project-3 {
         background-color: #3b1d9e;
+    }
+
+    .project-4 {
+        background-color: #790868;
     }
