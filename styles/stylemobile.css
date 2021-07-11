@@ -647,7 +647,7 @@ template {
   .skills-page h1 {
     font-size: 20px;
     left: 25px;
-    width: 180px;
+    width: 150px;
   }
   .skills-page i {
     font-size: 25px;
@@ -677,6 +677,7 @@ template {
     font-size: 20px;
     left: 15px;
     top: 100px;
+    width: 150px;
   }
   .projects-page h2 {
     font-size: 25px;
@@ -755,6 +756,7 @@ template {
     font-size: 20px;
     left: 25px;
     width: 100px;
+    width: 150px;
   }
   .contact-page input[type=text] {
     right: 0px;
@@ -830,6 +832,7 @@ template {
     font-size: 10px;
     top: 20px;
     right: 100px;
+    width: 300px;
   }
   header h3 {
     font-size: 10px;
@@ -871,9 +874,8 @@ template {
   .about-page h1 {
     font-size: 20px;
     right: 0px;
-    left: 20px;
     padding-top: 50px;
-    width: 180px;
+    width: 150px;
   }
   .about-page p {
     font-size: 10px;
@@ -917,8 +919,8 @@ template {
   }
   .skills-page h1 {
     font-size: 20px;
-    left: 25px;
-    width: 180px;
+    left: 0px;
+    width: 150px;
   }
   .skills-page i {
     font-size: 25px;
@@ -928,7 +930,7 @@ template {
     opacity: 1;
     width: 350px;
     padding: 25px;
-    margin: -10px;
+    margin: -30px;
   }
   .skills-list li {
     margin: 0 auto;
@@ -1002,11 +1004,14 @@ template {
   .projects-page .project-1 i, .projects-page .project-2 i, .projects-page .project-3 i, .projects-page .project-4 i {
     font-size: 20px;
   }
+  .projects-page .project-1 a, .projects-page .project-2 a, .projects-page .project-3 a, .projects-page .project-4 a {
+    width: 320px;
+  }
   .projects-page .project-1 img, .projects-page .project-2 img, .projects-page .project-3 img, .projects-page .project-4 img {
-    width: 230px;
-    height: 180px;
+    width: 200px;
+    height: 160px;
     position: relative;
-    right: 25px;
+    right: 5px;
   }
   .projects-page .button-previous {
     left: 1px;
