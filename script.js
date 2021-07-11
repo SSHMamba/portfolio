@@ -16,14 +16,14 @@ let translateX = 0;
                 // if image carousel is not at starting position, go to previous image
                 if (imageIndex !== 1) {
                 imageIndex--;
-                translateX += 1920;
+                translateX += screen.width;
                 }
             } 
             // if image carousel is not at the end, go to next image
             else {
                 if (imageIndex !== numberOfImages) {
                     imageIndex++;
-                    translateX -= 1920;
+                    translateX -= screen.width;
                 }
             }
         // translate pictures when button is pressed

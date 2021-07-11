@@ -487,33 +487,41 @@ template {
     height: 520px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 780px) {
   .wrapper {
-    max-width: 750px;
+    max-width: 780px;
     width: 100%;
-    height: 480px;
+    height: 700px;
+  }
+
+  header {
+    background-position-y: 100px;
+  }
+  header h1 {
+    font-size: 65px;
+    width: 600px;
   }
 
   .skills-page {
-    max-width: 750px;
+    max-width: 780px;
     width: 100%;
-    height: 480px;
+    height: 700px;
   }
 
   .projects-page {
-    max-width: 750px;
+    max-width: 780px;
     width: 100%;
-    height: 480px;
+    height: 700px;
     background-image: none;
   }
   .projects-page .carousel {
-    max-width: 750px;
+    max-width: 780px;
     width: 100%;
-    height: 480px;
+    height: 700px;
   }
   .projects-page .project-1, .projects-page .project-2, .projects-page .project-3 {
-    width: 750px;
-    height: 480px;
+    max-width: 780px;
+    height: 900px;
   }
 }
 @media (max-width: 580px) {
@@ -718,7 +726,7 @@ template {
     bottom: 120px;
   }
   .projects-page .project-1, .projects-page .project-2, .projects-page .project-3, .projects-page .project-4 {
-    width: 580px;
+    width: 780px;
     height: 1600px;
   }
   .projects-page .project-1 ul, .projects-page .project-2 ul, .projects-page .project-3 ul, .projects-page .project-4 ul {
@@ -733,10 +741,10 @@ template {
     font-size: 20px;
   }
   .projects-page .project-1 img, .projects-page .project-2 img, .projects-page .project-3 img, .projects-page .project-4 img {
-    width: 500px;
-    height: 400px;
+    width: 440px;
+    height: 310px;
     position: relative;
-    right: 25px;
+    right: 5px;
   }
   .projects-page .button-previous {
     left: 1px;
@@ -778,6 +786,267 @@ template {
     max-width: 580px;
     width: 100%;
     height: 1240px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+@media (max-width: 375px) {
+  * {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  header {
+    background-size: cover;
+    -webkit-animation: none;
+            animation: none;
+  }
+  header h1 {
+    -webkit-animation: none;
+            animation: none;
+  }
+  header h2 {
+    -webkit-animation: none;
+            animation: none;
+  }
+  header h3 {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .wrapper {
+    width: 375px;
+    max-width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 15% 120px;
+  }
+
+  header {
+    background-position-x: -400px;
+  }
+  header h1 {
+    font-size: 25px;
+    position: relative;
+    right: 100px;
+    width: 300px;
+  }
+  header h2 {
+    font-size: 10px;
+    top: 20px;
+    right: 100px;
+    width: 300px;
+  }
+  header h3 {
+    font-size: 10px;
+    top: 20px;
+    right: 100px;
+    width: 200px;
+  }
+  header i {
+    position: relative;
+    right: 100px;
+  }
+
+  .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .social-icons li {
+    margin: 10px 30px;
+  }
+
+  .about-page {
+    width: 375px;
+    width: 100%;
+    height: 600px;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .about-page .scroll-headers.active {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .about-page .scroll-headers {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .about-page h1 {
+    font-size: 20px;
+    right: 0px;
+    padding-top: 50px;
+    width: 150px;
+  }
+  .about-page p {
+    font-size: 10px;
+    width: 300px;
+    padding-top: 27px;
+    padding: 15px;
+  }
+  .about-page .about-box {
+    padding-top: 0px;
+    display: inline-block;
+    margin: 0 auto;
+    -webkit-animation: none;
+            animation: none;
+    opacity: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-page .about-box .about-pic {
+    width: 200px;
+    margin: 0 auto;
+    left: 50px;
+  }
+  .about-page .about-box .scroll-headers {
+    display: inline-block;
+  }
+
+  .scroll-headers {
+    display: none;
+  }
+
+  .skills-page {
+    width: 375px;
+    width: 100%;
+    height: 900px;
+  }
+  .skills-page h1 {
+    font-size: 20px;
+    left: 0px;
+    width: 150px;
+  }
+  .skills-page i {
+    font-size: 25px;
+  }
+
+  .skills-list {
+    opacity: 1;
+    width: 350px;
+    padding: 25px;
+    margin: -30px;
+  }
+  .skills-list li {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .skills-list li span {
+    font-size: 10px;
+  }
+
+  .projects-page {
+    width: 375px;
+    width: 100%;
+    height: 600px;
+    background-image: none;
+  }
+  .projects-page h1 {
+    font-size: 20px;
+    left: 15px;
+    bottom: 550px;
+  }
+  .projects-page h2 {
+    font-size: 25px;
+    top: 60px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects-page h3 {
+    font-size: 10px;
+    position: relative;
+    top: 50px;
+    font-weight: normal;
+    width: 200px;
+    left: 0px;
+  }
+  .projects-page .carousel {
+    width: 375px;
+    width: 100%;
+    height: 600px;
+  }
+  .projects-page .carousel-images {
+    width: 375px;
+  }
+  .projects-page .live-repo-links {
+    bottom: 120px;
+  }
+  .projects-page .project-1, .projects-page .project-2, .projects-page .project-3, .projects-page .project-4 {
+    width: 375px;
+    height: 1000px;
+  }
+  .projects-page .project-1 ul, .projects-page .project-2 ul, .projects-page .project-3 ul, .projects-page .project-4 ul {
+    position: relative;
+    right: 20px;
+    width: 200px;
+  }
+  .projects-page .project-1 ul li, .projects-page .project-2 ul li, .projects-page .project-3 ul li, .projects-page .project-4 ul li {
+    padding: 0px;
+  }
+  .projects-page .project-1 i, .projects-page .project-2 i, .projects-page .project-3 i, .projects-page .project-4 i {
+    font-size: 20px;
+  }
+  .projects-page .project-1 a, .projects-page .project-2 a, .projects-page .project-3 a, .projects-page .project-4 a {
+    width: 375px;
+  }
+  .projects-page .project-1 img, .projects-page .project-2 img, .projects-page .project-3 img, .projects-page .project-4 img {
+    width: 200px;
+    height: 160px;
+    position: relative;
+    right: -15px;
+  }
+  .projects-page .button-previous {
+    left: 1px;
+    top: 300px;
+  }
+  .projects-page .button-next {
+    right: 1px;
+    top: 300px;
+  }
+
+  .contact-page {
+    width: 375px;
+    width: 100%;
+    height: 600px;
+  }
+  .contact-page h1 {
+    font-size: 20px;
+    left: 25px;
+    width: 100px;
+  }
+  .contact-page input[type=text] {
+    right: 0px;
+  }
+  .contact-page textarea[type=text] {
+    width: 300px;
+  }
+  .contact-page .upload-file {
+    right: 50px;
+  }
+  .contact-page .send-button {
+    left: 90px;
+  }
+  .contact-page .contact-icons {
+    display: none;
+  }
+
+  .footer-wrapper {
+    width: 375px;
+    width: 100%;
+    height: 900px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
