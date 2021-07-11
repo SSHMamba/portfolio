@@ -7,7 +7,6 @@ const numberOfImages = document.querySelectorAll('.carousel-images div').length;
 let imageIndex = 1;
 // on refresh, wait for button to be pressed to begin translate
 let translateX = 0;
-// let imageSizes = 1280;
 
 // add clicking functionality to button and implement .forEach for button to toggle through pictures
     carouselButtons.forEach(button => {

@@ -657,9 +657,7 @@
 }
 
 
-
-
-@media (max-width: 375px) {
+@media (max-width: 420px) {
 
 
     * {
@@ -683,7 +681,7 @@
     
     // header page
     .wrapper {
-    width: 375px;
+    width: 420px;
     max-width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -730,7 +728,7 @@
     
 // about page
     .about-page {
-    width: 375px;
+    width: 420px;
         width: 100%;
         height: 600px;
         animation: none;
@@ -786,7 +784,7 @@
 
 // skills page
     .skills-page {
-    width: 375px;
+    width: 420px;
     width: 100%;
     height: 900px;
     h1 {
@@ -818,7 +816,7 @@
 
 // projects page
     .projects-page {
-    width: 375px;
+    width: 420px;
     width: 100%;
     height: 600px;
     background-image: none;
@@ -849,13 +847,13 @@
         // }
         
         .carousel {
-    width: 375px;
+    width: 420px;
         width: 100%;
         height: 600px;
         }
 
         .carousel-images {
-    width: 375px;
+    width: 420px;
         }
         // .skills-used {
         //     display: flex;
@@ -871,7 +869,7 @@
             bottom: 120px;
         }
         .project-1, .project-2, .project-3, .project-4 {
-    width: 375px;
+    width: 420px;
         height: 1000px;
         ul {
             position: relative;
@@ -886,7 +884,7 @@
         }
 
         a {
-            width: 375px;
+    width: 420px;
         }
 
         img {
@@ -911,7 +909,7 @@
 
 // contact page
     .contact-page {
-    width: 375px;
+    width: 420px;
         width: 100%;
         height: 600px;
         h1 {
@@ -945,7 +943,7 @@
 
 // footer page
     .footer-wrapper {
-    width: 375px;
+    width: 420px;
         width: 100%;
         height: 900px;
         flex-direction: column;
@@ -956,6 +954,46 @@
 
 
 
+
+@media (max-width: 375px) {
+    .wrapper {
+        width: 375px;
+    }
+
+    .about-page {
+        width: 375px;
+    }
+
+    .skills-page {
+        width: 375px;
+    }
+
+    .projects-page {
+        width: 375px;
+
+        .carousel {
+            width: 375px;
+        }
+
+        .carousel-images {
+            width: 375px;
+        }
+        .project-1,.project-2,.project-3,.project-4 {
+            width: 375px;
+            a {
+                width: 375px;
+            }
+        }
+
+    }
+            .contact-wrapper {
+            width: 375px;
+        }
+
+        .footer-wrapper {
+            width: 375px;
+        }
+}
 
 
 
