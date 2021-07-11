@@ -111,8 +111,6 @@
                                         <h3>A budgeting app centralized around booking events & concerts using Ticketmaster API, storing user information to Firebase</h3>
                                         <a href="https://concert-accountant.netlify.app/"><img src="assets/project-3-background.png" alt=""></a>
                                         <ul class="skills-used">
-                                            <li><i class="fab fa-html5"></i><span>HTML5</span></li>
-                                            <li><i class="fab fa-sass"></i><span>Sass / CSS3</span></li>
                                             <li><i class="fab fa-js-square"></i><span>JavaScript</span></li>
                                             <li><i class="fab fa-react"></i><span>React</span></li>
                                             <li><i class="fas fa-laptop-code"></i><span>REST APIs</span></li>
@@ -251,11 +249,20 @@
             }
 </script>
 <script>
-    if (screen.width > 100) {
+    if (screen.width > 400) {
         const head = document.getElementsByTagName('head')[0];
         const script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = 'script13inch.js';
+        head.appendChild(script);
+    }
+</script>
+<script>
+    if (screen.width > 100) {
+        const head = document.getElementsByTagName('head')[0];
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'scriptmobile.js';
         head.appendChild(script);
     }
 </script>

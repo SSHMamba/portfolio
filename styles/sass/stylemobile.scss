@@ -120,6 +120,27 @@
     padding: 15% 120px;
     }
 
+    header {
+        i {
+            position: relative;
+            right: 50px;
+            top: 100px;
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+        
+        h2 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+
     // header {
     //     h1 {
     //         position: relative;
@@ -151,9 +172,32 @@
         max-width: 1280px;
         width: 100%;
         height: 720px;
+
+        h1 {
+            font-size: 55px;
+        }
+        p {
+            font-size: 15px;
+            width: 700px;
+            margin:0 auto;
+            padding-top: 50px;
+        }
         .about-box {
             margin: 0 auto;
             lefT: 0px;
+            padding-top: 0px;
+            .about-pic {
+                width: 300px;
+                position: relative;
+                right: 50px;
+                opacity: 1;
+            }
+        }
+        .scroll-headers {
+            
+        }
+        .scroll-headers.active {
+            animation: none;
         }
     }
 
@@ -165,6 +209,10 @@
     max-width: 1280px;
     width: 100%;
     height: 920px;
+
+        h1 {
+            font-size: 55px;
+        }
     }
 
     .skills-list {
@@ -180,26 +228,59 @@
     .projects-page {
     max-width: 1280px;
     width: 100%;
-    height: 1220px;
+    height: 720px;
     background-image: none;
 
         h1 {
-            bottom: 900px;
-            left: 50px;
+            bottom: 550px;
+            right: 180px;
             font-size: 45px;
         }
 
         h2 {
+            top: 0px;
+            font-size: 25px;
+            padding-top: 200px;
+        }
+        h3 {
+            top: 0px;
+            font-size: 10px;
         }
         
         .carousel {
         max-width: 1280px;
         width: 100%;
-        height: 1220px;
+        height: 720px;
+        }
+
+        .button-previous, .button-next {
+            top: 400px;
+        }
+        .carousel-images {
+            position: relative;
+            bottom: 160px;
         }
         .project-1, .project-2, .project-3, .project-4 {
+        padding-top: 350px;
         width: 1280px;
-        height: 720px;
+        height: 1220px;
+        position: relative;
+            img {
+                width: 450px;
+                height: 300px;
+            }
+        }
+        .skills-used {
+            position: relative;
+            bottom: 40px;
+            i {
+                font-size: 35px;
+            }
+        }
+
+        .live-repo-links {
+            position: relative;
+            bottom: 100px;
         }
     }
 
@@ -208,9 +289,35 @@
     .contact-page {
         max-width: 1280px;
         width: 100%;
-        height: 920px;
+        height: 720px;
         background-size: 15%;
 
+        h1 {
+            font-size: 55px;
+        }
+
+        .contact-wrapper {
+            width: 1280px;
+            height: 720px;
+        }
+
+        input[type=text] {
+            font-size: 15px;
+        }
+
+        textarea[type=text] {
+            font-size: 15px;
+            margin-top: -30px;
+        }
+
+        .send-button {
+            top: 0px;
+        }
+
+        .upload-file {
+            font-size: 10px;
+            right: 150px;
+        }
     }
 
 
@@ -221,6 +328,14 @@
         height: 520px;
     }
 }
+
+
+
+
+
+
+
+
 
 @media (max-width: 750px) {
     .wrapper {
@@ -256,4 +371,292 @@
         height: 480px;
         }
 }
+}
+
+@media (max-width: 321px) {
+
+
+    * {
+        animation: none;
+    }
+
+    header {
+        background-size: cover;
+        animation: none;
+        h1 {
+            animation: none;
+        }
+        h2 {
+            animation: none;
+        }
+        h3 {
+            animation: none;
+        }
+
+    }
+    
+    // header page
+    .wrapper {
+    width: 320px;
+    max-width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 15% 120px;
+    }
+
+
+    header {
+
+        background-position-x: -400px;
+
+    h1 {
+        font-size: 25px;
+        position: relative;
+        right: 100px;
+        width: 300px;
+    }
+    
+    h2 {
+        font-size: 10px;
+        top: 20px;
+        right: 100px;
+    }
+    h3{
+        font-size: 10px;
+        top: 20px;
+        right: 100px;
+        width: 200px;
+    }
+
+        i {
+            position: relative;
+            right: 100px;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        li {
+            margin: 10px 30px;
+        }
+    }
+    
+// about page
+    .about-page {
+        max-width: 320px;
+        width: 100%;
+        height: 600px;
+        animation: none;
+        
+        .scroll-headers.active {
+            transform: none;
+        }
+
+        .scroll-headers {
+            transform: none;
+            transition: none;
+        }
+        h1 {
+            font-size: 20px;
+            right: 0px;
+            left: 20px;
+            padding-top: 50px;
+        }
+        p {
+            font-size: 10px;
+            width: 300px;
+            padding-top: 27px;
+            padding: 15px;
+        }
+        .about-box {
+            padding-top: 0px;
+            display: inline-block;
+            margin: 0 auto;
+            animation: none;
+            opacity: 1;
+            flex-direction: column;
+            width: auto;
+            justify-content: center;
+            .about-pic {
+                width: 200px;
+                margin: 0 auto;
+                left: 50px;
+            }
+
+            .scroll-headers {
+                display: inline-block;
+
+            }
+        }
+    }
+
+    .scroll-headers {
+        display: none;
+    }
+
+
+
+
+// skills page
+    .skills-page {
+    max-width: 320px;
+    width: 100%;
+    height: 900px;
+    h1 {
+        font-size: 20px;
+        left: 25px;
+    }
+
+    i {
+        font-size: 25px;
+    }
+    }
+
+    .skills-list {
+        opacity: 1;
+        width: 350px;
+        padding: 25px;
+        margin: -10px;
+        li {
+            margin: 0 auto;
+            padding: 10px;
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+
+
+
+// projects page
+    .projects-page {
+    max-width: 320px;
+    width: 100%;
+    height: 600px;
+    background-image: none;
+    h1 {
+        font-size: 20px;
+        left: 15px;
+        bottom: 550px;
+    }
+            h2 {
+            font-size: 25px;
+            top: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h3 {
+            font-size: 10px;
+            position: relative;
+            top: 50px;
+            font-weight: normal;
+            width: 200px;
+            left: 0px;
+
+        }
+
+        // h1 {
+        //     bottom: 1600px;
+        //     left: 500px;
+        // }
+        
+        .carousel {
+        max-width: 320px;
+        width: 100%;
+        height: 600px;
+        }
+
+        .carousel-images {
+            width: 320px;
+        }
+        .skills-used {
+            display: flex;
+            flex-direction: row;
+            span {
+                font-size: 10px;
+                padding: 0px;
+            }
+        }
+
+        .live-repo-links {
+            bottom: 120px;
+        }
+        .project-1, .project-2, .project-3, .project-4 {
+        width: 320px;
+        height: 1000px;
+        ul {
+            position: relative;
+            right: 20px;
+            width: 300px;
+            li {
+                padding: 0px;
+            }
+        }
+        i {
+            font-size: 20px;
+        }
+
+        img {
+            width: 230px;
+            height: 180px;
+            position: relative;
+            right: 25px;
+        }
+
+        }
+                .button-previous {
+            left: 1px;
+            top: 300px;
+        }
+            .button-next {
+                right: 1px;
+                top: 300px;
+            }
+
+    }
+
+
+// contact page
+    .contact-page {
+        max-width: 320px;
+        width: 100%;
+        height: 600px;
+        h1 {
+            font-size: 20px;
+            left: 25px;
+            width: 100px;
+        }
+
+        input[type=text] {
+            right: 0px;
+        }
+
+        textarea[type=text] {
+            width: 300px;
+        }
+
+        .upload-file {
+            right: 50px;
+        }
+
+        .send-button {
+            left: 90px;
+        }
+
+        .contact-icons {
+            display: none;
+        }
+        // background-size: 28%;
+    }
+
+
+// footer page
+    .footer-wrapper {
+        max-width: 320px;
+        width: 100%;
+        height: 900px;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+    }
 }
