@@ -249,11 +249,21 @@
             }
 </script>
 <script>
-    if (screen.width > 400) {
+    if (screen.width > 600) {
         const head = document.getElementsByTagName('head')[0];
         const script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = 'script13inch.js';
+        head.appendChild(script);
+    }
+</script>
+
+<script>
+    if (screen.width > 400) {
+        const head = document.getElementsByTagName('head')[0];
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'scriptmobilelarge.js';
         head.appendChild(script);
     }
 </script>
