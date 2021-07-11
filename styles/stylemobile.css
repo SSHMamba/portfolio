@@ -600,8 +600,9 @@ template {
   .about-page h1 {
     font-size: 20px;
     right: 0px;
-    left: 20px;
+    left: 0px;
     padding-top: 50px;
+    width: 150px;
   }
   .about-page p {
     font-size: 10px;
@@ -646,6 +647,7 @@ template {
   .skills-page h1 {
     font-size: 20px;
     left: 25px;
+    width: 180px;
   }
   .skills-page i {
     font-size: 25px;
@@ -871,6 +873,7 @@ template {
     right: 0px;
     left: 20px;
     padding-top: 50px;
+    width: 180px;
   }
   .about-page p {
     font-size: 10px;
@@ -915,6 +918,7 @@ template {
   .skills-page h1 {
     font-size: 20px;
     left: 25px;
+    width: 180px;
   }
   .skills-page i {
     font-size: 25px;
