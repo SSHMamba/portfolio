@@ -271,6 +271,10 @@ p {
   font-family: "Roboto", serif;
 }
 
+a {
+  font-family: "Roboto", serif;
+}
+
 * {
   background-color: #2b1b4d;
   -webkit-animation: 3.5s ease-in-out 0s 1 fadeIn;
