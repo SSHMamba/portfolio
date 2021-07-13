@@ -82,7 +82,7 @@
         width: 100%;
         height: 2160px;
         }
-        .project-1, .project-2, .project-3, .project-4 {
+        .project-1, .project-2, .project-3, .project-4, .project-5 {
         width: 3840px;
         height: 2160px;
         }
@@ -108,7 +108,7 @@
 
 
 
-
+// 
 @media (max-width: 1281px) {
 
     // header page
@@ -260,7 +260,7 @@
             position: relative;
             bottom: 160px;
         }
-        .project-1, .project-2, .project-3, .project-4 {
+        .project-1, .project-2, .project-3, .project-4, .project-5 {
         padding-top: 350px;
         width: 1280px;
         height: 1220px;
@@ -336,48 +336,231 @@
 
 
 
-
+// tablet
 @media (max-width: 780px) {
     .wrapper {
-        max-width: 780px;
-        width: 100%;
-        height: 700px;
+    width: 780px;
+    max-width: 100%;
+    height: 1024px;
+    margin: 0 auto;
+    padding: 15% 120px;
     }
+    @-webkit-keyframes slideInFromRight {
+  0% {
+    background-position-x: 1800px;
+        opacity: 0;
+  }
+  100% {
+    background-position-x: -500px;
+        opacity: 1;
+  }
+}
+
 
     header {
         h1 {
-            font-size: 65px;
-            width: 600px;
+            font-size: 35px;
+            padding-bottom: 10px;
+            // width: 600px;
+        }
+        h2 {
+            font-size: 15px;
+        }
+        h3 {
+            font-size: 15px;
         }
         background-position-y: 100px;
+        background-position-x: -500px;
+        background-size: cover;
+    }
+
+     .about-page {
+    width: 780px;
+        width: 100%;
+        height: 1024px;
+        animation: none;
+        
+        .scroll-headers.active {
+            transform: none;
+        }
+
+        .scroll-headers {
+            transform: none;
+            transition: none;
+        }
+        h1 {
+            font-size: 20px;
+            right: 0px;
+            padding-top: 50px;
+            width: 150px;
+        }
+        p {
+            font-size: 12px;
+            padding-top: 27px;
+            padding: 15px;
+            left: 0px;
+            right: 0px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about-box {
+            padding-top: 0px;
+            display: inline-block;
+            margin: 0 auto;
+            animation: none;
+            opacity: 1;
+            flex-direction: column;
+            width: auto;
+            left: 20px;
+            right: 0px;
+            justify-content: center;
+            .about-pic {
+                width: 400px;
+                margin: 0 auto;
+                left: 150px;
+            }
+
+            .scroll-headers {
+                display: inline-block;
+
+            }
+        }
     }
     .skills-page {
-    max-width: 780px;
+    width: 780px;
     width: 100%;
-        height: 700px;
+    height: 1024px;
+    h1 {
+        font-size: 25px;
+        right: 0px;
+        margin: 10px 50px;
     }
 
-    .projects-page {
-        max-width: 780px;
-    width: 100%;
-        height: 700px;
-    background-image: none;
+    i {
+        // font-size: 25px;
+    }
+    }
 
-        h1 {
-            // bottom: 1600px;
-            // left: 500px;
+    .skills-list {
+        opacity: 1;
+        width: 350px;
+        padding: 25px;
+        li {
+            i {
+                font-size: 45px;
+            }
+            margin: 0 auto;
+            padding: 10px;
+            span {
+                font-size: 15px;
+            }
         }
+    }
+
+// projects page
+    .projects-page {
+    width: 780px;
+    width: 100%;
+    height: 1024px;
+    background-image: none;
+    h1 {
+        font-size: 20px;
+        left: 15px;
+        bottom: 950px;
+    }
+            h2 {
+            font-size: 25px;
+            top: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h3 {
+            font-size: 10px;
+            position: relative;
+            top: 50px;
+            font-weight: normal;
+            width: 200px;
+            left: 0px;
+
+        }
+
+        // h1 {
+        //     bottom: 1600px;
+        //     left: 500px;
+        // }
         
         .carousel {
-        max-width: 780px;
+    width: 780px;
         width: 100%;
+        height: 1024px;
+        }
+
+        .carousel-images {
+    width: 780px;
+        }
+        // .skills-used {
+        //     display: flex;
+        //     flex-direction: row;
+        //     width: 150px;
+        //     span {
+        //         font-size: 10px;
+        //         padding: 0px;
+        //     }
+        // }
+
+        .live-repo-links {
+            bottom: 120px;
+        }
+        .project-1, .project-2, .project-3, .project-4, .project-5 {
+    width: 780px;
+        height: 1324px;
+        ul {
+            position: relative;
+            right: 20px;
+            width: 200px;
+            li {
+                padding: 0px;
+            }
+        }
+        i {
+            font-size: 20px;
+        }
+
+        a {
+    width: 780px;
+        }
+
+        img {
+            width: 550px;
+            height: 400px;
+            position: relative;
+            right: -15px;
+            left: 45px;
+        }
+
+        }
+                .button-previous {
+            left: 1px;
+            top: 500px;
+        }
+            .button-next {
+                right: 1px;
+                top: 500px;
+            }
+
+    }
+
+    .contact-page {
+        h1 {
+            font-size: 25px;
+            left: 150px;
+        }
+    }
+
+    .footer-wrapper {
+        width: 780px;
         height: 700px;
-        }
-        .project-1, .project-2, .project-3 {
-        max-width: 780px;
-        height: 900px;
-        }
-}
+    }
 }
 
 
@@ -457,7 +640,6 @@
         h1 {
             font-size: 20px;
             right: 0px;
-            left: 0px;
             padding-top: 50px;
             width: 150px;
         }
@@ -482,10 +664,7 @@
                 left: 50px;
             }
 
-            .scroll-headers {
-                display: inline-block;
 
-            }
         }
     }
 
@@ -576,7 +755,7 @@
         .live-repo-links {
             bottom: 120px;
         }
-        .project-1, .project-2, .project-3, .project-4 {
+        .project-1, .project-2, .project-3, .project-4, .project-5 {
         width: 780px;
         height: 1600px;
         ul {
@@ -868,7 +1047,7 @@
         .live-repo-links {
             bottom: 120px;
         }
-        .project-1, .project-2, .project-3, .project-4 {
+        .project-1, .project-2, .project-3, .project-4, .project-5 {
     width: 420px;
         height: 1000px;
         ul {
@@ -978,7 +1157,7 @@
         .carousel-images {
             width: 375px;
         }
-        .project-1,.project-2,.project-3,.project-4 {
+        .project-1, .project-2, .project-3, .project-4, .project-5 {
             width: 375px;
             a {
                 width: 375px;
@@ -1207,7 +1386,7 @@
         .live-repo-links {
             bottom: 120px;
         }
-        .project-1, .project-2, .project-3, .project-4 {
+        .project-1, .project-2, .project-3, .project-4, .project-5 {
         width: 320px;
         height: 1000px;
         ul {

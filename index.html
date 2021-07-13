@@ -16,7 +16,7 @@
     
 </head>
 <body>
-    <header class="header wrapper">
+    <header class="header wrapper" id="home">
         <!-- Intro Page -->
 
         <h1>Hi, my name is Saif Hussaini. I build things for the web. </h1>
@@ -32,7 +32,8 @@
     </header>
 
     <main>
-        <section class="about-page">
+        <!-- ABOUT SECTION -->
+        <section class="about-page" id="about">
             <h1 class=="scroll-headers">About Me</h1>
                             <div class="about-box scroll-animation">
                 <p>As a recent graduate with a certificate in Web Development at Juno College, the skills and experience I have picked up are just as important as the passion and enjoyment I have gotten out of front-end web development. As someone with a history and interest in music production and graphic design, being able to showcase my artistic spirit through front-end software with responsive and accessible apps has been very rewarding. Since I've grown to love coding, I have future endeavors to learn back-end and transition to a full-stack developer.</p>
@@ -41,8 +42,8 @@
         </section>
 
 
-
-        <section class="skills-page">
+        <!-- SKILLS SECTION -->
+        <section class="skills-page" id="skills">
             <!-- Skills Page -->
         <h1 class=="scroll">Skills</h1>
         <div class="skills">
@@ -65,8 +66,8 @@
         </section>
 
 
-
-        <section class="projects-page">
+        <!-- PROJECTS SECTION -->
+        <section class="projects-page"  id="projects">
             <section class="carousel">
                 <h1 class=="scroll">Projects</h1>
                         <button class="button-previous" id="previous"><</button>
@@ -108,7 +109,8 @@
                                     </div>
                                     <div class="project-3">
                                         <h2>Concert Accountant</h2>
-                                        <h3>A budgeting app centralized around booking events & concerts using Ticketmaster API, storing user information to Firebase</h3>
+                                        <h3>A budgeting app centralized around booking events & concerts using Ticketmaster API, storing user information to Firebase. Made in collaboration with <a href="https://github.com/Brandon-E-Carter">Brandon Carter</a> and <a href="https://github.com/RixTrixx">Eric Howell</a></h3>
+                                        
                                         <a href="https://concert-accountant.netlify.app/"><img src="assets/project-3-background.png" alt=""></a>
                                         <ul class="skills-used">
                                             <li><i class="fab fa-js-square"></i><span>JavaScript</span></li>
@@ -116,6 +118,7 @@
                                             <li><i class="fas fa-laptop-code"></i><span>REST APIs</span></li>
                                             <li><i class="fas fa-mobile-alt"></i><span>Responsive Design</span></li>
                                             <li><i class="fab fa-google"></i><span>Firebase</span></li>
+                                            <li><i class="fab fa-git"></i><span>Git</span></li>
                                             <li><i class="fas fa-people-carry"></i><span>Pair Programming</span></li>
                                         </ul>
                                         <div class="live-repo-links">
@@ -126,11 +129,32 @@
                                         </div>
                                     </div>
                                     <div class="project-4">
+                                        <h2>One Piece Chapter Selector</h2>
+                                        <h3>A 900+ chapter viewer of popular manga One Piece, with arcs and chapters filter, created in vanilla JavaScript using REST API's. Made in collaboration with <a href="https://github.com/RixTrixx">Eric Howell</a></h3>
+                                        
+                                        <a href="https://cohort-34-pirates.github.io/project2-saif-eric/"><img src="./assets/project-5-background.png" alt=""></a>
+                                        <ul class="skills-used">
+                                            <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+                                            <li><i class="fab fa-sass"></i><span>Sass / CSS3</span></li>
+                                            <li><i class="fab fa-js-square"></i><span>JavaScript</span></li>
+                                            <li><i class="fas fa-laptop-code"></i><span>REST APIs</span></li>
+                                            <li><i class="fab fa-git"></i><span>Git</span></li>
+                                            <li><i class="fas fa-people-carry"></i><span>Pair Programming</span></li>
+                                        </ul>
+                                        <div class="live-repo-links">
+                                            <ul>
+                                                <li><a href="https://cohort-34-pirates.github.io/project2-saif-eric/">Live</a></li>
+                                                <li><a href="https://github.com/Cohort-34-Pirates/project2-saif-eric">GitHub Repository</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="project-5">
                                         <h2>Marvel Cinematic Universe Quiz</h2>
-                                        <h3>A multiple choice quiz including score, created using jQuery library with JavaScript</h3>
+                                        <h3>A multiple choice quiz including dynamic score, created using jQuery library with JavaScript</h3>
                                         <a href="https://priceless-yonath-6f303b.netlify.app/"><img src="./assets/project-4-background.png" alt=""></a>
                                         <ul class="skills-used">
                                             <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+                                            <li><i class="fab fa-sass"></i><span>Sass / CSS3</span></li>
                                             <li><i class="fab fa-js-square"></i><span>JavaScript</span></li>
                                             <li><i class="fab fa-node-js"></i><span>jQuery</span></li>
                                         </ul>
@@ -141,13 +165,18 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <div class="project-6">
+                                        <h2>.. And with more to come!</h2>
+                                    </div>
                                 </div>
                                 <button class="button-next" id="next">></button>
                     
             </section>
         </section>
 
-        <section class="contact-page">
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-page" id="contacts">
             
             <h1 class=="scroll">Get in touch</h1>
             <div class="contact-form scroll-animation">
@@ -187,17 +216,18 @@
                     <li><a href="https://cohort-34-pirates.github.io/project2-saif-eric/"><p>One Piece Chapter Selector</p></a></li>
                     <li><a href="https://elegant-tereshkova-91ebbb.netlify.app/"><p>watch it</p></a></li>
                     <li><a href="https://concert-accountant.netlify.app/"><p>Concert Accountant</p></a></li>
+                    <li><a href="https://cohort-34-pirates.github.io/project2-saif-eric/"><p>One Piece Chapter Selector</p></a></li>
                     <li><a href="https://priceless-yonath-6f303b.netlify.app/"><p>Marvel Cinematic Universe Quiz</p></a></li>
                 </ul>
             </div>
             <div class="content-list">
                 <h2>Site Content</h2>
                 <ul>
-                    <li><p>Home</p></li>
-                    <li><p>About</p></li>
-                    <li><p>Skills</p></li>
-                    <li><p>Projects</p></li>
-                    <li><p>Contact</p></li>
+                    <li><a href="#home"><p>Home</p></a></li>
+                    <li><a href="#about"><p>About</p></a></li>
+                    <li><a href="#skills"><p>Skills</p></a></li>
+                    <li><a href="#projects"><p>Projects</p></a></li>
+                    <li><a href="#contact"><p>Contact</p></a></li>
                 </ul>
             </div>
             <div class="contact-me">

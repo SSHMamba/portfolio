@@ -15,16 +15,17 @@ let translateX = 0;
                 // if image carousel is not at starting position, go to previous image
                 if (imageIndex !== 1) {
                 imageIndex--;
-                translateX += screen.width;
+                translateX += window.screen.width;
                 }
             } 
             // if image carousel is not at the end, go to next image
-            else {
+            else  {
                 if (imageIndex !== numberOfImages) {
                     imageIndex++;
-                    translateX -= screen.width;
+                    translateX -= window.screen.width;
                 }
             }
+
         // translate pictures when button is pressed
           carouselImages.style.transform = `translateX(${translateX}px)`;
         })

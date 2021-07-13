@@ -98,7 +98,7 @@
     position: absolute;
 }
 
-.project-1, .project-2, .project-3, .project-4 {
+.project-1, .project-2, .project-3, .project-4, .project-5 {
     width: 1920px;
     height: 1080px;
     display: flex;
@@ -132,6 +132,7 @@
     a {
         margin: 0 auto;
         transition: transform .5s;
+        color: white;
     }
 
     a:hover{
@@ -152,10 +153,37 @@
     .project-3 {
         background-color: #3b1d9e;
     }
-
+    
     .project-4 {
+        background-color: #9ed6e5;
+        h2, h3, a, i, span, li {
+            color: black;
+        }
+        .live-repo-links {
+            li a {
+                color: black;
+            }
+        }
+    }
+
+    .project-5 {
         background-color: #790868;
     }
+
+     .project-6 {
+         width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    h2 {
+        color: white;
+        margin:0 auto;
+    }
+     }
+
 
 .live-repo-links {
     background-color: transparent;
