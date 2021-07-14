@@ -15,14 +15,14 @@ let translateX = 0;
                 // if image carousel is not at starting position, go to previous image
                 if (imageIndex !== 1) {
                 imageIndex--;
-                translateX += window.screen.width;
+                translateX += window.innerWidth;
                 }
             } 
             // if image carousel is not at the end, go to next image
             else  {
                 if (imageIndex !== numberOfImages) {
                     imageIndex++;
-                    translateX -= window.screen.width;
+                    translateX -= window.innerWidth;
                 }
             }
 
