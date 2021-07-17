@@ -779,9 +779,19 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .skills-page {
+    height: 135vh;
+    background-color: #390b9c;
+  }
   .skills-page .skills-list {
     width: 100%;
     max-width: 320px;
+  }
+  .skills-page .skills-list i {
+    font-size: 30px;
+  }
+  .skills-page .skills-list span {
+    font-size: 10px;
   }
   .skills-page h1 {
     padding-top: 10px;
@@ -953,5 +963,10 @@ template {
   .footer-wrapper ul li {
     font-size: 12px;
     max-width: 100%;
+    color: white;
+  }
+  .footer-wrapper ul li a {
+    color: white;
+    text-decoration: none;
   }
 }

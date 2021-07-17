@@ -650,10 +650,18 @@
     }
 
     .skills-page {
-
+        height: 135vh;
+            background-color: #390b9c;
         .skills-list {
             width: 100%;
             max-width: 320px;
+            i {
+                font-size: 30px;
+            }
+
+            span {
+                font-size: 10px;
+            }
         }
         h1 {
             padding-top: 10px;
@@ -723,6 +731,7 @@
         
         }
         .skills-used {
+
             max-width: 100%;
             
             li {
@@ -810,6 +819,7 @@
                     justify-content: center;
             margin: 10px 0;
             padding: 0px;
+
         }
 
         li {
@@ -822,6 +832,11 @@
         ul li {
             font-size: 12px;
             max-width: 100%;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+                        color: white;
         }
     }
 }
