@@ -332,10 +332,6 @@
 
 
 
-
-
-
-
 // tablet
 @media (max-width: 780px) {
     .wrapper {
@@ -564,908 +560,268 @@
 }
 
 
-@media (max-width: 580px) {
-    * {
-        animation: none;
-    }
 
+
+@media (max-width: 500px) {
+    .wrapper {
+        height: 125vh;
+        max-width: 100%;
+    }
     header {
-        background-size: cover;
-        background-position-x: -500px;
-        background-position-y: 10px;
-        animation: none;
+        height: 125vh;
+        max-width: 100%;
         h1 {
-            animation: none;
+            font-size: 15px;
+            width: 250px;
+            position: relative;
+            right: 70px;
         }
         h2 {
-            animation: none;
-        }
-        h3 {
-            animation: none;
-        }
-        h1 {
-        font-size: 25px;
-        position: relative;
-        right: 100px;
-        width: 300px;
-    }
-    
-    h2 {
-        font-size: 10px;
-        top: 20px;
-        right: 100px;
-    }
-    h3{
-        font-size: 10px;
-        top: 20px;
-        right: 100px;
-        width: 200px;
-    }
-    i {
-            position: relative;
-            right: 100px;
-        }
-    }
-
-    .social-icons {
-        display: flex;
-        li {
-            margin: 10px 30px;
-        }
-
-    }
-    .wrapper {
-    width: 580px;
-    max-width: 100%;
-    height: 1240px;
-    margin: 0 auto;
-    padding: 15% 120px;
-    }
-
-
-    .about-page {
-        max-width: 580px;
-        width: 100%;
-        height: 1240px;
-        animation: none;
-        
-        .scroll-headers.active {
-            transform: none;
-        }
-
-        .scroll-headers {
-            transform: none;
-            transition: none;
-        }
-        h1 {
-            font-size: 20px;
-            right: 0px;
-            padding-top: 50px;
-            width: 150px;
-        }
-        p {
-            font-size: 10px;
-            width: 300px;
-            padding-top: 27px;
-            padding: 15px;
-        }
-        .about-box {
-            padding-top: 0px;
-            display: inline-block;
-            margin: 0 auto;
-            animation: none;
-            opacity: 1;
-            flex-direction: column;
-            width: auto;
-            justify-content: center;
-            .about-pic {
-                width: 200px;
-                margin: 0 auto;
-                left: 50px;
-            }
-
-
-        }
-    }
-
-    .scroll-headers {
-        display: none;
-    }
-
-     .skills-page {
-    max-width: 580px;
-    width: 100%;
-    height: 1240px;
-    h1 {
-        font-size: 20px;
-        left: 25px;
-            width: 150px;
-    }
-
-    i {
-        font-size: 25px;
-    }
-    }
-
-    .skills-list {
-        opacity: 1;
-        width: 350px;
-        padding: 25px;
-        margin: -10px;
-        li {
-            margin: 0 auto;
-            padding: 10px;
-            span {
-                font-size: 10px;
-            }
-        }
-    }
-
-    // projects page
-    .projects-page {
-    max-width: 580px;
-    width: 100%;
-    height: 1240px;
-    background-image: none;
-    h1 {
-        font-size: 20px;
-        left: 15px;
-        top: 100px;
-                    width: 150px;
-    }
-            h2 {
-            font-size: 25px;
-            top: 60px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h3 {
-            font-size: 10px;
-            position: relative;
-            top: 50px;
-            font-weight: normal;
             width: 200px;
-            left: 0px;
-
+            font-size:10px;
+            position: relative;
+            padding-top: 20px;
+            right: 70px;
         }
-
-        // h1 {
-        //     bottom: 1600px;
-        //     left: 500px;
-        // }
-        
-        .carousel {
-        max-width: 580px;
-        width: 100%;
-        height: 1240px;
+        h3 {
+            font-size: 10px;
+            width: 200px;
+            position: relative;
+            right: 70px;
         }
-
-        .carousel-images {
-            width: 580px;
-        }
-        .skills-used {
+        .social-icons {
             display: flex;
-            flex-direction: row;
-            span {
-                font-size: 10px;
-                padding: 0px;
-            }
-        }
-
-        .live-repo-links {
-            bottom: 120px;
-        }
-        .project-1, .project-2, .project-3, .project-4, .project-5 {
-        width: 780px;
-        height: 1600px;
-        ul {
+            flex-direction: column;
+            margin: 0 auto;
+            bottom: 380px;
+            width: 100%;
+            height: 300px;
             position: relative;
-            right: 20px;
-            width: 300px;
+            right: -50px;
+            left: -90px;
+            justify-content: center;
             li {
-                padding: 0px;
+                padding: -20px;
+                i {
+                    font-size: 10px;
+                    padding: 0px;
+                }
             }
         }
-        i {
-            font-size: 20px;
-        }
-
-        img {
-            width: 440px;
-            height: 310px;
-            position: relative;
-            right: 5px;
-        }
-
-        }
-                .button-previous {
-            left: 1px;
-            top: 500px;
-        }
-            .button-next {
-                right: 1px;
-                top: 500px;
-            }
-
     }
 
 
-    // contact page
-    .contact-page {
-        max-width: 580px;
-        width: 100%;
-        height: 1240px;
-        h1 {
-            font-size: 20px;
-            left: 25px;
-            width: 100px;
-                        width: 150px;
-        }
-
-        input[type=text] {
-            right: 0px;
-        }
-
-        textarea[type=text] {
-            width: 300px;
-        }
-
-        .upload-file {
-            right: 50px;
-        }
-
-        .send-button {
-            left: 90px;
-        }
-
-        .contact-icons {
-            display: none;
-        }
-        // background-size: 28%;
-    }
-
-    // footer page
-    .footer-wrapper {
-        max-width: 580px;
-        width: 100%;
-        height: 1240px;
-        flex-direction: column;
-        text-align: center;
-        align-content: center;
-    }
-}
-
-
-@media (max-width: 420px) {
-
-
-    * {
-        animation: none;
-    }
-
-    header {
-        background-size: cover;
-        animation: none;
-        h1 {
-            animation: none;
-        }
-        h2 {
-            animation: none;
-        }
-        h3 {
-            animation: none;
-        }
-
-    }
-    
-    // header page
-    .wrapper {
-    width: 420px;
-    max-width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    padding: 15% 120px;
-    }
-
-
-    header {
-
-        background-position-x: -400px;
-
-    h1 {
-        font-size: 25px;
-        position: relative;
-        right: 100px;
-        width: 300px;
-    }
-    
-    h2 {
-        font-size: 10px;
-        top: 20px;
-        right: 100px;
-        width: 300px;
-    }
-    h3{
-        font-size: 10px;
-        top: 20px;
-        right: 100px;
-        width: 200px;
-    }
-
-        i {
-            position: relative;
-            right: 100px;
-        }
-    }
-
-    .social-icons {
-        display: flex;
-        li {
-            margin: 10px 30px;
-        }
-    }
-    
-// about page
     .about-page {
-    width: 420px;
-        width: 100%;
-        height: 600px;
-        animation: none;
-        
-        .scroll-headers.active {
-            transform: none;
-        }
+        height: 125vh;
 
-        .scroll-headers {
-            transform: none;
-            transition: none;
-        }
         h1 {
-            font-size: 20px;
+            left: 0px;
             right: 0px;
-            padding-top: 50px;
-            width: 150px;
-        }
-        p {
-            font-size: 10px;
-            width: 300px;
-            padding-top: 27px;
-            padding: 15px;
+            width: auto;
+            text-align: center;
+            padding-bottom: 45px;
         }
         .about-box {
-            padding-top: 0px;
-            display: inline-block;
-            margin: 0 auto;
-            animation: none;
-            opacity: 1;
-            flex-direction: column;
-            width: auto;
-            justify-content: center;
-            .about-pic {
-                width: 200px;
-                margin: 0 auto;
-                left: 50px;
-            }
-
-            .scroll-headers {
-                display: inline-block;
-
-            }
-        }
-    }
-
-    .scroll-headers {
-        display: none;
-    }
-
-
-
-
-// skills page
-    .skills-page {
-    width: 420px;
-    width: 100%;
-    height: 900px;
-    h1 {
-        font-size: 20px;
-        left: 0px;
-            width: 150px;
-    }
-
-    i {
-        font-size: 25px;
-    }
-    }
-
-    .skills-list {
-        opacity: 1;
-        width: 350px;
-        padding: 25px;
-        margin: -30px;
-        li {
-            margin: 0 auto;
-            padding: 10px;
-            span {
-                font-size: 10px;
-            }
-        }
-    }
-
-
-
-// projects page
-    .projects-page {
-    width: 420px;
-    width: 100%;
-    height: 600px;
-    background-image: none;
-    h1 {
-        font-size: 20px;
-        left: 15px;
-        bottom: 550px;
-    }
-            h2 {
-            font-size: 25px;
-            top: 60px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h3 {
-            font-size: 10px;
-            position: relative;
-            top: 50px;
-            font-weight: normal;
-            width: 200px;
             left: 0px;
-
-        }
-
-        // h1 {
-        //     bottom: 1600px;
-        //     left: 500px;
-        // }
-        
-        .carousel {
-    width: 420px;
-        width: 100%;
-        height: 600px;
-        }
-
-        .carousel-images {
-    width: 420px;
-        }
-        // .skills-used {
-        //     display: flex;
-        //     flex-direction: row;
-        //     width: 150px;
-        //     span {
-        //         font-size: 10px;
-        //         padding: 0px;
-        //     }
-        // }
-
-        .live-repo-links {
-            bottom: 120px;
-        }
-        .project-1, .project-2, .project-3, .project-4, .project-5 {
-    width: 420px;
-        height: 1000px;
-        ul {
-            position: relative;
-            right: 20px;
-            width: 200px;
-            li {
-                padding: 0px;
+            width: 100%;
+            p {
+                width: auto;
+                line-height: 20px;
+                padding: 10px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: normal;
             }
-        }
-        i {
-            font-size: 20px;
-        }
-
-        a {
-    width: 420px;
-        }
-
-        img {
-            width: 200px;
-            height: 160px;
-            position: relative;
-            right: -15px;
-        }
-
-        }
-                .button-previous {
-            left: 1px;
-            top: 300px;
-        }
-            .button-next {
-                right: 1px;
-                top: 300px;
-            }
-
-    }
-
-
-// contact page
-    .contact-page {
-    width: 420px;
-        width: 100%;
-        height: 600px;
-        h1 {
-            font-size: 20px;
-            left: 25px;
-            width: 100px;
-        }
-
-        input[type=text] {
+            .about-pic {
+            width: 100%;
+            max-width: 180px;
+            left: 0px;
             right: 0px;
+            box-shadow: #2b1b4d 8px 8px;
+            margin: auto;
+                            display: flex;
+                justify-content: center;
+            img {
+
+            }
+            }
         }
 
-        textarea[type=text] {
-            width: 300px;
-        }
 
-        .upload-file {
-            right: 50px;
-        }
-
-        .send-button {
-            left: 90px;
-        }
-
-        .contact-icons {
-            display: none;
-        }
-        // background-size: 28%;
-    }
-
-
-// footer page
-    .footer-wrapper {
-    width: 420px;
-        width: 100%;
-        height: 900px;
-        flex-direction: column;
-        text-align: center;
-        align-content: center;
-    }
-}
-
-
-
-
-@media (max-width: 375px) {
-    .wrapper {
-        width: 375px;
-    }
-
-    .about-page {
-        width: 375px;
     }
 
     .skills-page {
-        width: 375px;
+
+        .skills-list {
+            width: 100%;
+            max-width: 320px;
+        }
+        h1 {
+            padding-top: 10px;
+            width: 200px;
+        }
     }
 
     .projects-page {
-        width: 375px;
+        height: 100vh;
+
 
         .carousel {
-            width: 375px;
+            height: 100vh;
+
+            .skills-used {
+                display: flex;
+                flex-wrap: wrap;
+                width: 600px;
+                bottom: 50px;
+                padding-top: 50px;
+            }
         }
 
         .carousel-images {
-            width: 375px;
+            height: 100vh;
+            max-width: 100%;
+
         }
+
+        .button-previous, .button-next {
+            top: 50px;
+        }
+
         .project-1, .project-2, .project-3, .project-4, .project-5 {
-            width: 375px;
+            max-width: 100%;
+            h2 {
+                top: 0px;
+                padding-top: 30px;
+                font-size: 20px;
+
+            }
+            h3 {
+                top: 10px;
+                font-size: 10px;
+                line-height: 10px;
+                padding-bottom: 50px;
+                font-family: 'Roboto', sans-serif;
+            }
+            img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+                right: 0px;
+                left: 0px;
+                margin: 0px;
+            }
+
+            ul {
+                width: 350px;
+            }
+            height: 128vh;
+
             a {
-                width: 375px;
+                max-width: 100%;
+                width: 400px;
             }
-        }
-
-    }
-            .contact-wrapper {
-            width: 375px;
-        }
-
-        .footer-wrapper {
-            width: 375px;
-        }
-}
-
-
-
-@media (max-width: 321px) {
-
-
-    * {
-        animation: none;
-    }
-
-    header {
-        background-size: cover;
-        animation: none;
-        h1 {
-            animation: none;
-        }
-        h2 {
-            animation: none;
-        }
-        h3 {
-            animation: none;
-        }
-
-    }
-    
-    // header page
-    .wrapper {
-    width: 320px;
-    max-width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    padding: 15% 120px;
-    }
-
-
-    header {
-
-        background-position-x: -400px;
-
-    h1 {
-        font-size: 25px;
-        position: relative;
-        right: 100px;
-        width: 300px;
-    }
-    
-    h2 {
-        font-size: 10px;
-        top: 20px;
-        right: 100px;
-        width: 300px;
-    }
-    h3{
-        font-size: 10px;
-        top: 20px;
-        right: 100px;
-        width: 200px;
-    }
-
-        i {
-            position: relative;
-            right: 100px;
-        }
-    }
-
-    .social-icons {
-        display: flex;
-        li {
-            margin: 10px 30px;
-        }
-    }
-    
-// about page
-    .about-page {
-        max-width: 320px;
-        width: 100%;
-        height: 600px;
-        animation: none;
         
-        .scroll-headers.active {
-            transform: none;
-        }
-
-        .scroll-headers {
-            transform: none;
-            transition: none;
-        }
-        h1 {
-            font-size: 20px;
-            right: 0px;
-            padding-top: 50px;
-            width: 150px;
-        }
-        p {
-            font-size: 10px;
-            width: 300px;
-            padding-top: 27px;
-            padding: 15px;
-        }
-        .about-box {
-            padding-top: 0px;
-            display: inline-block;
-            margin: 0 auto;
-            animation: none;
-            opacity: 1;
-            flex-direction: column;
-            width: auto;
-            justify-content: center;
-            .about-pic {
-                width: 200px;
-                margin: 0 auto;
-                left: 50px;
-            }
-
-            .scroll-headers {
-                display: inline-block;
-
-            }
-        }
-    }
-
-    .scroll-headers {
-        display: none;
-    }
-
-
-
-
-// skills page
-    .skills-page {
-    max-width: 320px;
-    width: 100%;
-    height: 900px;
-    h1 {
-        font-size: 20px;
-        left: 0px;
-            width: 150px;
-    }
-
-    i {
-        font-size: 25px;
-    }
-    }
-
-    .skills-list {
-        opacity: 1;
-        width: 350px;
-        padding: 25px;
-        margin: -30px;
-        li {
-            margin: 0 auto;
-            padding: 10px;
-            span {
-                font-size: 10px;
-            }
-        }
-    }
-
-
-
-// projects page
-    .projects-page {
-    max-width: 320px;
-    width: 100%;
-    height: 600px;
-    background-image: none;
-    h1 {
-        font-size: 20px;
-        left: 15px;
-        bottom: 550px;
-    }
-            h2 {
-            font-size: 25px;
-            top: 60px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h3 {
-            font-size: 10px;
-            position: relative;
-            top: 50px;
-            font-weight: normal;
-            width: 200px;
-            left: 0px;
-
-        }
-
-        // h1 {
-        //     bottom: 1600px;
-        //     left: 500px;
-        // }
-        
-        .carousel {
-        max-width: 320px;
-        width: 100%;
-        height: 600px;
-        }
-
-        .carousel-images {
-            width: 320px;
         }
         .skills-used {
-            display: flex;
-            flex-direction: row;
-            span {
-                font-size: 10px;
-                padding: 0px;
+            max-width: 100%;
+            
+            li {
+                max-width: 100%;
+                margin: 10px -5px;
+  
+
             }
+            span {
+                    font-size: 8px;
+                }
         }
+
 
         .live-repo-links {
-            bottom: 120px;
-        }
-        .project-1, .project-2, .project-3, .project-4, .project-5 {
-        width: 320px;
-        height: 1000px;
-        ul {
-            position: relative;
-            right: 20px;
-            width: 300px;
-            li {
-                padding: 0px;
-            }
-        }
-        i {
-            font-size: 20px;
-        }
-
-        a {
-            width: 320px;
-        }
-
-        img {
+            max-width: 100%;
             width: 200px;
-            height: 160px;
-            position: relative;
-            right: 5px;
-        }
-
-        }
-                .button-previous {
-            left: 1px;
-            top: 300px;
-        }
-            .button-next {
-                right: 1px;
-                top: 300px;
+            bottom: 120px;
+            ul li{
+                display: flex;
+                flex-direction: row;
+                width: 50px;
             }
-
+            a {
+                font-size: 10px;
+                text-align: center;
+                display: flex;
+            }
+        }
     }
 
-
-// contact page
     .contact-page {
-        max-width: 320px;
-        width: 100%;
-        height: 600px;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .contact-wrapper {
+            max-width: 100%;
+        }
+
         h1 {
-            font-size: 20px;
-            left: 25px;
-            width: 100px;
+            position: relative;
+            right: 0%;
+            left: 0%;
+            width: 200px;
+            padding-top: 0px;
         }
 
         input[type=text] {
             right: 0px;
+            width: 200px;
         }
 
         textarea[type=text] {
-            width: 300px;
+            width: 250px;
+            right: 0px;
         }
-
-        .upload-file {
-            right: 50px;
-        }
-
-        .send-button {
-            left: 90px;
-        }
-
-        .contact-icons {
-            display: none;
-        }
-        // background-size: 28%;
     }
 
+    .send-button {
+        left: 80px;
+    }
 
-// footer page
+    .upload-file {
+        position: relative;
+        left: 0px;
+        right: 0px;
+    }
+
+    .recaptcha {
+        right: 60px;
+    }
+
     .footer-wrapper {
-        max-width: 320px;
-        width: 100%;
-        height: 900px;
+        height: 100vh;
+        max-width: 100%;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
         align-content: center;
+        padding-bottom: 100px;
+
+        ul {
+                    justify-content: center;
+            margin: 10px 0;
+            padding: 0px;
+        }
+
+        li {
+            margin: 0 auto;
+        }
+        .links-list ul li {
+            width: auto;
+            
+        }
+        ul li {
+            font-size: 12px;
+            max-width: 100%;
+        }
     }
 }
