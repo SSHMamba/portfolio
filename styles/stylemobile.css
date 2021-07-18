@@ -269,6 +269,9 @@ template {
     position: relative;
     left: 500px;
   }
+  header .content-list-home {
+    left: 15%;
+  }
 
   .about-page {
     max-width: 3840px;
@@ -348,6 +351,10 @@ template {
   }
   header h3 {
     font-size: 15px;
+  }
+  header .content-list-home {
+    bottom: 250px;
+    left: 0%;
   }
 
   h3 {
@@ -520,6 +527,9 @@ template {
   }
   header h3 {
     font-size: 15px;
+  }
+  header .content-list-home {
+    left: -60px;
   }
 
   .about-page {
@@ -707,7 +717,7 @@ template {
     width: 200px;
     font-size: 10px;
     position: relative;
-    padding-top: 20px;
+    padding-top: 50px;
     right: 70px;
   }
   header h3 {
@@ -741,6 +751,17 @@ template {
   header .social-icons li i {
     font-size: 10px;
     padding: 0px;
+  }
+  header .content-list-home {
+    bottom: 330px;
+    width: 200px;
+    left: -120px;
+  }
+  header .content-list-home ul li {
+    margin: 0px 10px;
+  }
+  header .content-list-home a {
+    font-size: 10px;
   }
 
   .about-page {
@@ -819,7 +840,7 @@ template {
     max-width: 100%;
   }
   .projects-page .button-previous, .projects-page .button-next {
-    top: 50px;
+    top: 100px;
   }
   .projects-page .project-1, .projects-page .project-2, .projects-page .project-3, .projects-page .project-4, .projects-page .project-5 {
     max-width: 100%;
@@ -864,7 +885,7 @@ template {
   }
   .projects-page .live-repo-links {
     max-width: 100%;
-    width: 200px;
+    width: auto;
     bottom: 120px;
   }
   .projects-page .live-repo-links ul li {
@@ -876,6 +897,9 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .projects-page .live-repo-links a {
     font-size: 10px;
@@ -883,6 +907,9 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .contact-page {

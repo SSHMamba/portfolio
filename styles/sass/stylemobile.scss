@@ -33,6 +33,10 @@
             position: relative;
             left: 500px;
         }
+
+        .content-list-home {
+            left: 15%;
+        }
     }
 
     
@@ -138,6 +142,11 @@
 
         h3 {
             font-size: 15px;
+        }
+
+        .content-list-home {
+            bottom: 250px;
+            left: 0%;
         }
     }
 
@@ -368,6 +377,9 @@
         background-position-y: 100px;
         background-position-x: -500px;
         background-size: cover;
+        .content-list-home {
+            left: -60px;
+        }
     }
 
      .about-page {
@@ -580,7 +592,7 @@
             width: 200px;
             font-size:10px;
             position: relative;
-            padding-top: 20px;
+            padding-top: 50px;
             right: 70px;
         }
         h3 {
@@ -606,6 +618,18 @@
                     font-size: 10px;
                     padding: 0px;
                 }
+            }
+        }
+
+        .content-list-home {
+            bottom: 330px;
+            width: 200px;
+            left: -120px;
+            ul li {
+                margin: 0px 10px;
+            }
+            a {
+                font-size: 10px;
             }
         }
     }
@@ -692,7 +716,7 @@
         }
 
         .button-previous, .button-next {
-            top: 50px;
+            top: 100px;
         }
 
         .project-1, .project-2, .project-3, .project-4, .project-5 {
@@ -748,17 +772,19 @@
 
         .live-repo-links {
             max-width: 100%;
-            width: 200px;
+            width: auto;
             bottom: 120px;
             ul li{
                 display: flex;
                 flex-direction: row;
                 width: 50px;
+                justify-content: center;
             }
             a {
                 font-size: 10px;
                 text-align: center;
                 display: flex;
+                justify-content: center;
             }
         }
     }

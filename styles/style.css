@@ -252,6 +252,10 @@ template {
   padding: 15% 120px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -384,6 +388,55 @@ header {
   margin: 35px 0;
   background-color: transparent;
   background: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.social-icons li i:hover {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+  color: #d88ecb;
+}
+
+.content-list-home {
+  -webkit-animation: 3s ease-in-out 0s 1 slideInFromLeft;
+          animation: 3s ease-in-out 0s 1 slideInFromLeft;
+  position: relative;
+  width: 400px;
+  bottom: 150px;
+  background-color: transparent;
+}
+.content-list-home ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+}
+.content-list-home ul li {
+  list-style-type: none;
+  margin: 0px 20px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background-color: transparent;
+}
+.content-list-home ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+.content-list-home ul li p {
+  background-color: transparent;
+}
+.content-list-home li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #d88ecb;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.content-list-home li:hover::after {
+  width: 100%;
 }
 
 .about-page {
@@ -1310,6 +1363,9 @@ template {
     position: relative;
     left: 500px;
   }
+  header .content-list-home {
+    left: 15%;
+  }
 
   .about-page {
     max-width: 3840px;
@@ -1389,6 +1445,10 @@ template {
   }
   header h3 {
     font-size: 15px;
+  }
+  header .content-list-home {
+    bottom: 250px;
+    left: 0%;
   }
 
   h3 {
@@ -1761,6 +1821,27 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    bottom: 380px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    right: -50px;
+    left: -90px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .social-icons li {
+    padding: -20px;
+  }
+  header .social-icons li i {
+    font-size: 10px;
+    padding: 0px;
   }
 
   .about-page {
@@ -1779,21 +1860,39 @@ template {
   }
   .about-page .about-box p {
     width: auto;
-    line-height: 25px;
+    line-height: 20px;
     padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
   }
   .about-page .about-box .about-pic {
     width: 100%;
-    max-width: 140px;
+    max-width: 180px;
     left: 0px;
+    right: 0px;
     -webkit-box-shadow: #2b1b4d 8px 8px;
             box-shadow: #2b1b4d 8px 8px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
+  .skills-page {
+    height: 135vh;
+    background-color: #390b9c;
+  }
   .skills-page .skills-list {
     width: 100%;
     max-width: 320px;
+  }
+  .skills-page .skills-list i {
+    font-size: 30px;
+  }
+  .skills-page .skills-list span {
+    font-size: 10px;
   }
   .skills-page h1 {
     padding-top: 10px;
@@ -1814,6 +1913,7 @@ template {
         flex-wrap: wrap;
     width: 600px;
     bottom: 50px;
+    padding-top: 50px;
   }
   .projects-page .carousel-images {
     height: 100vh;
@@ -1828,17 +1928,23 @@ template {
   }
   .projects-page .project-1 h2, .projects-page .project-2 h2, .projects-page .project-3 h2, .projects-page .project-4 h2, .projects-page .project-5 h2 {
     top: 0px;
-    padding-top: 0px;
+    padding-top: 30px;
+    font-size: 20px;
   }
   .projects-page .project-1 h3, .projects-page .project-2 h3, .projects-page .project-3 h3, .projects-page .project-4 h3, .projects-page .project-5 h3 {
     top: 10px;
+    font-size: 10px;
+    line-height: 10px;
+    padding-bottom: 50px;
+    font-family: "Roboto", sans-serif;
   }
   .projects-page .project-1 img, .projects-page .project-2 img, .projects-page .project-3 img, .projects-page .project-4 img, .projects-page .project-5 img {
     max-width: 100%;
-    width: 65%;
-    height: 55%;
+    width: 100%;
+    height: 100%;
     right: 0px;
     left: 0px;
+    margin: 0px;
   }
   .projects-page .project-1 ul, .projects-page .project-2 ul, .projects-page .project-3 ul, .projects-page .project-4 ul, .projects-page .project-5 ul {
     width: 350px;
@@ -1850,8 +1956,9 @@ template {
   .projects-page .skills-used {
     max-width: 100%;
   }
-  .projects-page .skills-used ul li {
+  .projects-page .skills-used li {
     max-width: 100%;
+    margin: 10px -5px;
   }
   .projects-page .skills-used span {
     font-size: 8px;
@@ -1860,7 +1967,6 @@ template {
     max-width: 100%;
     width: 200px;
     bottom: 120px;
-    text-align: center;
   }
   .projects-page .live-repo-links ul li {
     display: -webkit-box;
@@ -1871,14 +1977,13 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 50px;
-    text-align: center;
   }
   .projects-page .live-repo-links a {
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
-  }
-  .projects-page .live-repo-links span {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .contact-page {
@@ -1936,9 +2041,19 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-bottom: 100px;
   }
   .footer-wrapper ul {
-    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px 0;
+    padding: 0px;
   }
   .footer-wrapper li {
     margin: 0 auto;
@@ -1949,5 +2064,10 @@ template {
   .footer-wrapper ul li {
     font-size: 12px;
     max-width: 100%;
+    color: white;
+  }
+  .footer-wrapper ul li a {
+    color: white;
+    text-decoration: none;
   }
 }
